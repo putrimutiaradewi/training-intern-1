@@ -1,18 +1,18 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-interface Props {
-    input: string;
-    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void; 
+interface props {
+  placeholder: string;
+  type: "text" | "password";
 }
 
-const Input: FC<Props> = ({ input, onChange }) => {
-    return (
-        <input
-            className="bg-slate-500 rounded-md px-4 py-2 text-white"
-            value={input} 
-            onChange={onChange}
-        />
-    );
-}
+const Input: FC<props> = ({ type, placeholder }) => {
+  return (
+    <input
+      className=" rounded-[10px] p-[25px] px-[40px] py-[6px] shadow-2xl"
+      type={type}
+      placeholder={placeholder}
+    />
+  );
+};
 
 export default Input;
