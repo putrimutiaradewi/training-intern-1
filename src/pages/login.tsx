@@ -14,7 +14,7 @@ const LoginPage = () => {
   //   });
 
     const handleSubmit = () => {
-      navigate('/homepage')
+      navigate('/')
     };
 
   //   const handleUser =
